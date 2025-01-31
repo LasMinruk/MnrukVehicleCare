@@ -1,0 +1,98 @@
+/* Register Page Styling */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color:#1a1a1a
+    
+    
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-header h1 {
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.register-header p {
+    color: #ddd;
+    max-width: 500px;
+    margin: auto;
+}
+
+.register-form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.register-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.register-button {
+    width: 100%;
+    padding: 12px;
+    background: #f4a261;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-button:hover {
+    background: #e76f51;
+}
+
+.register-note {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.register-note a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.register-note a:hover {
+    text-decoration: underline;
+}

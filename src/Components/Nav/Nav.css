@@ -1,0 +1,239 @@
+/* Navbar Container */
+.nav-container {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    /* Glass Effect Styles (Always Visible) */
+    backdrop-filter: blur(10px); /* Adjust blur as needed */
+    background: transparent; /* Key change: Make background transparent */
+    /* End Glass Effect Styles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* Removed hover transition */
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      /* ... other styles */
+      backdrop-filter: blur(8px); /* Adjust blur as needed */
+      background: transparent; /* Key change: Make background transparent */
+  }
+
+  .mobile-menu {
+      /* ... other styles */
+      backdrop-filter: blur(8px); /* Adjust blur as needed */
+      background: rgba(0, 0, 0, 0.75); /* Keep a semi-transparent background for the mobile menu */
+  }
+}
+/* Fix alignment for company name */
+.nav-left {
+  flex: 1; /* Pushes it fully to the left */
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f4a261;
+  text-transform: uppercase;
+  margin-left: 20px; /* Pushes it closer to the left */
+}
+
+/* Desktop Menu */
+.home-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.home-ll {
+  padding: 10px;
+}
+
+.home-ll h1 {
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-ll:hover h1 {
+  color: #f4a261;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .home-ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-menu .home-ll {
+    text-align: center;
+    padding: 12px;
+  }
+
+  .mobile-menu .home-ll h1 {
+    font-size: 18px;
+  }
+}
+
+/* Active Link Styling */
+.active-link {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.active-link h1 {
+  color: #f4a261;
+  font-weight: bold;
+}
+
+/* Navbar Container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  /* Glass Effect Styles */
+  backdrop-filter: blur(10px); /* Adjust blur as needed */
+  background: rgba(255, 255, 255, 0.15); /* Adjust opacity as needed */
+  /* End Glass Effect Styles */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-container:hover {
+  background: rgba(255, 255, 255, 0.25); /* Slightly more opaque on hover */
+}
+
+
+/* ... (rest of your CSS) */
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: row;
+      align-items: center;
+      padding: 15px 20px;
+      /* Glass Effect Styles (Mobile) */
+      backdrop-filter: blur(8px); /* Adjust blur as needed */
+      background: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
+      /* End Glass Effect Styles */
+  }
+
+  .nav-container:hover {
+      background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+  }
+
+
+  .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Or adjust as needed */
+      left: 0;
+      width: 100%;
+      /* Glass Effect Styles (Mobile Menu) */
+      backdrop-filter: blur(8px); /* Adjust blur as needed */
+      background: rgba(0, 0, 0, 0.75); /* Adjust opacity as needed */
+      /* End Glass Effect Styles */
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+
+  /* ... res
+  t of your mobile styles */
+}
+
+/* Ensure navbar remains transparent */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  /* Transparent Background */
+  background: transparent !important;
+  
+  /* Glass Effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: backdrop-filter 0.3s ease;
+}
+
+/* Ensure hover effect is also transparent */
+.nav-container:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Force transparency in mobile mode */
+@media (max-width: 768px) {
+  .nav-container {
+    background: transparent !important;
+    backdrop-filter: blur(10px);
+  }
+}
+/* Company Name as a Clickable Link */
+.company-link {
+  text-decoration: none; /* Remove default underline */
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f4a261;
+  text-transform: uppercase;
+  margin-left: 20px;
+  cursor: pointer; /* Make it clear it's clickable */
+  transition: color 0.3s ease-in-out;
+}
+
+.company-name:hover {
+  color: #8B0000; /* Dark Red on Hover */
+}

@@ -1,0 +1,421 @@
+/* User Details Form Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.form-label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus,
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+select {
+    cursor: pointer;
+}
+
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background: #f4a261;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.form-button:hover {
+    background: #e76f51;
+}
+
+.form-note {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-note a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.form {
+    position: relative; /* Ensures dropdown appears within form */
+    z-index: 1; /* Lower than the dropdown */
+    overflow: visible; /* Allows dropdown to expand outside form */
+}
+
+.form-container {
+    overflow: visible; /* Prevents clipping */
+    position: relative;
+    z-index: 5;
+}
+/* Ensure dropdown visibility */
+.form-container {
+    position: relative;
+    overflow: visible;
+    z-index: 5;
+}
+
+.form {
+    position: relative;
+    overflow: visible; /* Prevents clipping */
+    z-index: 1;
+}
+
+.form-input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+select {
+    cursor: pointer;
+    appearance: none; /* Removes default styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Fix dropdown clipping */
+select option {
+    background: black;
+    color: white;
+    z-index: 9999;
+}
+
+/* Force dropdown to be above the form */
+select {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Set higher z-index for dropdown */
+select:focus {
+    z-index: 1001;
+}
+
+/* User Details Form Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Increased padding for better spacing */
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px; /* Increased font size */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 40px; /* Increased padding for a larger form */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 550px; /* Increased width for better usability */
+}
+
+.form-label {
+    display: block;
+    color: white;
+    font-size: 16px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-input,
+select {
+    width: 100%;
+    padding: 14px; /* Increased padding for bigger inputs */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    font-size: 16px; /* Larger text for better readability */
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus,
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+select {
+    cursor: pointer;
+    appearance: none; /* Removes default dropdown styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 14px; /* Bigger button */
+    background: #f4a261;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px; /* Larger font */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 15px; /* Extra space */
+}
+
+.form-button:hover {
+    background: #e76f51;
+}
+
+/* User-friendly message */
+.form-note {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.form-note a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+
+/* Fix dropdown clipping */
+select option {
+    background: black;
+    color: white;
+}
+
+/* Set higher z-index for dropdown */
+select {
+    position: relative;
+    z-index: 1000;
+}
+
+select:focus {
+    z-index: 1001;
+}
+
+
+
+/* User Details Form Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+}
+
+/* Title */
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form */
+.form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.form-input:focus,
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background: #f4a261;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background: #e76f51;
+}
+
+/* User-friendly message */
+.form-note {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-note a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+
+/* Fix dropdown clipping */
+select option {
+    background: black;
+    color: white;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 480px) {
+    .form {
+        width: 100%;
+        max-width: 340px;
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .form-input,
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
