@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Live Demo ([https://github.com/facebook/create-react-app](https://minruk.vercel.app/mainhome)).
+Live Demo (https://minruk.vercel.app/mainhome)
 
 ## Available Scripts
 
